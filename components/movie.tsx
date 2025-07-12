@@ -13,13 +13,13 @@ interface MovieProps {
 export default function Movie({ title, id, poster_path }: MovieProps) {
   const router = useRouter();
   const onClick = () => {
-    router.push("/(movies/${id}");
+    router.push("/movies/" + id);
   };
 
   return (
     <div className={styles.movie}>
       <img src={poster_path} alt={title} onClick={onClick} />
-      <Link href={"/(movies/${id}"}>{title}</Link>
+      <Link href={"/movies/" + id}>{title}</Link>
     </div>
   );
 }
