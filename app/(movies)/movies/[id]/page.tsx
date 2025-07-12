@@ -13,6 +13,7 @@ export async function generateMetadata({ params: { id } }: IParams) {
   };
 }
 
+// @ts-ignore
 export default async function MovieDetailPage({ params: { id } }: { IParams }) {
   return (
     <div>
@@ -24,5 +25,4 @@ export default async function MovieDetailPage({ params: { id } }: { IParams }) {
       </Suspense>
     </div>
   );
-  a;
 }
