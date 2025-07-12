@@ -1,6 +1,6 @@
 import styles from "../../styles/home.module.css";
 import Movie from "../../components/movie";
-import { MOVIE_URL } from "../constant";
+import { API_URL } from "../constant";
 
 export const metadata = {
   title: "Home",
@@ -8,7 +8,7 @@ export const metadata = {
 
 async function getMovies() {
   // await new Promise((resolve) => setTimeout(resolve, 1000));
-  return await fetch(MOVIE_URL).then((response) => response.json());
+  return await fetch(API_URL).then((response) => response.json());
 }
 
 export default async function HomePage() {

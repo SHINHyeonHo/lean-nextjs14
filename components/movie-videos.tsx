@@ -1,5 +1,5 @@
 import styles from "../styles/movie-videos.module.css";
-import { API_URL } from "../app/(home)/page";
+import { API_URL } from "../app/constant";
 
 async function getVideo(id: string) {
   await new Promise((resolve) => setTimeout(resolve, 2000));
